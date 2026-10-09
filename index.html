@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lola Choi | Designer</title>
+<meta name="description" content="Lola Choi is a designer in Manchester with a Computer Science degree and six years of client work for brands, runways and live events.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#fff;--ink:#111;--mute:#6a6a6a;--line:#e7e7e7;--acc:#b8125f;--acc-ink:#fff;--ph:#f3f3f3}
+@media (prefers-color-scheme:dark){:root:not([data-theme]){--bg:#0e0e0e;--ink:#f2f2f2;--mute:#a0a0a0;--line:#2a2a2a;--acc:#ff6fae;--acc-ink:#111;--ph:#1a1a1a}}
+:root[data-theme="dark"]{--bg:#0e0e0e;--ink:#f2f2f2;--mute:#a0a0a0;--line:#2a2a2a;--acc:#ff6fae;--acc-ink:#111;--ph:#1a1a1a}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0)}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration-color:var(--line);text-underline-offset:4px}
+a:hover{text-decoration-color:var(--acc)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:6px;z-index:20}
+.skip:focus{left:12px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:5;background:var(--bg);padding-top:env(safe-area-inset-top,0)}
+header .wrap{display:flex;align-items:center;gap:22px;height:64px}
+header b{font-weight:600;margin-right:auto;letter-spacing:-.01em}
+header a{text-decoration:none;color:var(--mute);font-size:16px}
+header a:hover{color:var(--ink)}
+.tg{background:none;border:0;padding:8px 0;cursor:pointer;color:var(--mute);font-size:16px}
+.tg:hover{color:var(--ink)}
+.intro{padding:72px 0 56px}
+h1{font-weight:500;font-size:clamp(26px,3.7vw,40px);line-height:1.2;letter-spacing:-.02em;margin:0 0 28px;max-width:26em}
+.intro p{margin:0 0 14px;max-width:62ch;color:var(--mute)}
+.intro .cta{color:var(--ink);margin-top:24px}
+.cta a{color:var(--acc);text-decoration-color:var(--acc)}
+h2.sec{font-size:15px;font-weight:500;color:var(--mute);margin:0 0 24px;padding-top:20px;border-top:1px solid var(--line)}
+section{padding-bottom:72px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:44px 28px}
+.open{display:block;width:100%;text-align:left;background:none;border:0;padding:0;cursor:pointer}
+.im{display:block;aspect-ratio:1/1;overflow:hidden;border-radius:10px;background:var(--ph)}
+.im img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.open:hover .im img{transform:scale(1.025)}
+.t{display:block;margin-top:14px;font-weight:500;letter-spacing:-.01em}
+.d{display:block;color:var(--mute);font-size:16px;line-height:1.45;margin-top:2px}
+.g{display:block;color:var(--mute);font-size:14px;margin-top:8px}
+.about{display:grid;grid-template-columns:240px 1fr;gap:48px;align-items:start}
+.about img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:10px}
+.about h3{font-size:clamp(22px,3vw,30px);font-weight:500;letter-spacing:-.02em;margin:0 0 18px;line-height:1.15}
+.about p{margin:0 0 14px;max-width:56ch}
+.skills{color:var(--mute);font-size:16px}
+.skl{display:grid;grid-template-columns:76px 1fr;gap:6px 18px;margin:22px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:16px}
+.skl dt{color:var(--mute)}
+.skl dd{margin:0}
+.contact p{margin:0 0 6px;max-width:56ch}
+.contact .big{font-size:clamp(22px,3.6vw,34px);font-weight:500;letter-spacing:-.02em;margin:0 0 16px}
+.contact .big a{color:var(--acc);text-decoration-color:var(--acc)}
+footer{border-top:1px solid var(--line);padding:22px 0 36px;color:var(--mute);font-size:14px}
+dialog{border:0;padding:0;background:var(--bg);color:var(--ink);width:min(900px,calc(100vw - 24px));max-height:calc(100dvh - 24px);border-radius:14px;overflow:auto;overscroll-behavior:contain}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+.dlgin{padding:28px 32px 36px}
+.x{position:sticky;top:0;float:right;margin:-12px -16px 0 12px;z-index:2;background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:8px 16px;cursor:pointer;font-size:15px}
+.x:hover{border-color:var(--acc)}
+.mt{font-size:clamp(24px,3.6vw,34px);font-weight:500;letter-spacing:-.02em;line-height:1.15;margin:0 0 16px;max-width:22ch}
+.more p{max-width:62ch;margin:0 0 14px}
+.more a.ext{color:var(--acc);text-decoration-color:var(--acc)}
+.more dl{display:grid;grid-template-columns:90px 1fr;gap:6px 18px;margin:22px 0 26px;padding-top:16px;border-top:1px solid var(--line);font-size:16px}
+.more dt{color:var(--mute)}
+.more dd{margin:0}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+.gal img{width:100%;height:auto;border-radius:8px;background:var(--ph)}
+.gal img:first-child:nth-last-child(1){grid-column:1/-1}
+.gal.tall{grid-template-columns:1fr}
+.gal.tall img{max-width:min(100%,440px)}
+@media (max-width:700px){
+.skl{grid-template-columns:1fr;gap:2px}
+.skl dd{margin-bottom:10px}
+body{font-size:16px}
+.wrap{padding:0 18px}
+header .wrap{gap:16px;height:58px}
+header a.n2{display:none}
+.intro{padding:44px 0 40px}
+.grid{grid-template-columns:1fr;gap:36px}
+.about{grid-template-columns:1fr;gap:24px}
+.about img{max-width:260px}
+.dlgin{padding:20px 18px 28px}
+.x{margin:-4px -4px 0 8px}
+.gal{grid-template-columns:1fr}
+.more dl{grid-template-columns:1fr;gap:2px}
+.more dd{margin-bottom:10px}
+dialog{width:calc(100vw - 16px);max-height:calc(100dvh - 16px)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.im img{transition:none}.open:hover .im img{transform:none}}
+</style>
+<noscript><style>.more{display:block!important}.more[hidden]{display:block!important}.open{pointer-events:none}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+<header><div class="wrap"><b>Lola Choi</b><a href="#work">Work</a><a class="n2" href="#about">About</a><a href="#contact">Contact</a><button class="tg" id="tg" type="button" aria-pressed="false">Dark</button></div></header>
+<main>
+<div class="wrap">
+<div class="intro">
+<h1>I’m a Manchester-based designer with a recent First in Computer Science and six years of commercial client experience across fashion, live events, and broadcast.</h1>
+<p>My work sits right at the intersection of hands-on creativity and technology. Over the past six years, I’ve painted, customised, and designed bespoke physical work for clients including Adidas, Timberland, Ed Sheeran, Netflix, and the England Women’s Team. Now, I’m combining that practical design sense and eye for detail with my technical background to build sharp, engaging digital experiences.</p>
+</div>
+<section id="work">
+<h2 class="sec">Selected work</h2>
+<div class="grid">
+<article class="p"><button class="open" type="button" aria-haspopup="dialog"><span class="im"><img src="images/ux-cover.jpg" alt="Two screens of the nutrition scanner app: a barcode scanner and a nutritional values page" width="800" height="800" loading="lazy"></span><span class="t">Nutrition scanner app</span><span class="d">An iOS prototype that helps shoppers make healthier choices in the moment.</span><span class="g">UX and digital</span></button>
+<div class="more" hidden><h2 class="mt">Nutrition scanner app</h2><p>In a collaborative design sprint at university, we built an interactive iOS prototype to help nutritionally conscious shoppers make informed choices while they shop. We applied UX principles, accessibility standards and user testing to keep it simple, engaging and easy to use.</p><p>I also used Figma during my internship at Rowanvale Books, where I worked directly with the founder to redesign the interface of their internal pricing tool and make it more user-friendly.</p><p><a class="ext" href="https://lnkd.in/eZW2YHqg" target="_blank" rel="noopener">Open the Figma prototype (opens in a new tab)</a></p><dl><dt>Role</dt><dd>Team design sprint, plus a Figma project during my Rowanvale Books internship</dd><dt>Focus</dt><dd>UX principles, accessibility, user testing</dd><dt>Tools</dt><dd>Figma</dd></dl><div class="gal"></div></div></article>
+<article class="p"><button class="open" type="button" aria-haspopup="dialog"><span class="im"><img src="images/social-video.jpg" alt="Still from a street-interview video for KIHT Collective with the on-screen question: what are you grateful for today?" width="800" height="800" loading="lazy" style="object-position:50% 22%"></span><span class="t">Social media and content design</span><span class="d">Strategy, graphics and video for a fashion collective.</span><span class="g">Digital content</span></button>
+<div class="more" hidden><h2 class="mt">Social media and content design</h2><p>KIHT Collective is a Manchester fashion community that shares street style content on Instagram. I co-planned its social strategy, designed digital graphics, and filmed and edited video on location around the city.</p><p>THEKILLERMUSE is a circular fashion borrowing app. There I handled direct customer outreach, social content and daily admin.</p><dl><dt>Clients</dt><dd>KIHT Collective, THEKILLERMUSE</dd><dt>Role</dt><dd>Content design, social strategy, video production and editing, customer outreach, social media management</dd><dt>Skills</dt><dd>Social media design, content creation, video editing, customer engagement, remote collaboration</dd></dl><div class="gal tall"></div></div></article>
+<article class="p"><button class="open" type="button" aria-haspopup="dialog"><span class="im"><img src="images/lfw-mask.jpg" alt="Painted mask design on an Adidas clog" width="800" height="800" loading="lazy"></span><span class="t">London Fashion Week clogs</span><span class="d">Ten matching pairs, painted to a fashion brand’s brief.</span><span class="g">Fashion</span></button>
+<div class="more" hidden><h2 class="mt">London Fashion Week clogs</h2><p>I hand-painted ten pairs of Adidas clogs for the LABRUM London Spring/Summer 2024 collection. Every pair had to match the others exactly across a repeated mask design, and the finished clogs walked in the London Fashion Week show.</p><p><a class="ext" href="https://getunruly.com/articles/labrum-ss24-nomoli-odyssey-a-sentimental-celebration-of-sierra-leone-through-fashion" target="_blank" rel="noopener">Read about the collection (opens in a new tab)</a></p><dl><dt>Client</dt><dd>LABRUM London</dd><dt>Role</dt><dd>Hand painting and artwork execution</dd><dt>Skills</dt><dd>Colour matching, detailed painting, consistency across a set, deadline management</dd></dl><div class="gal"><img src="images/lfw-runway.jpg" alt="Model on the runway in the painted clogs" loading="lazy"><img src="images/lfw-models.jpg" alt="Models in blue patterned outfits wearing the painted clogs" loading="lazy"><img src="images/lfw-clogs.jpg" alt="Painted clogs lined up in their bags" loading="lazy"></div></div></article>
+<article class="p"><button class="open" type="button" aria-haspopup="dialog"><span class="im"><img src="images/ed-sheeran-jordans.jpg" alt="Black and red Jordan 4s with painted Union Jack panels" width="800" height="800" loading="lazy"></span><span class="t">Ed Sheeran performance shoes</span><span class="d">Artwork designed to work across every panel of a shoe.</span><span class="g">Music</span></button>
+<div class="more" hidden><h2 class="mt">Ed Sheeran performance shoes</h2><p>I hand-painted Union Jack artwork onto a pair of performance shoes made for Ed Sheeran. The design had to flow across the panels and contours of the shoe and still look balanced as a pair.</p><p><a class="ext" href="https://breakingnews.ie/entertainment/ed-sheeran-delivers-emotional-song-for-the-queen-to-close-jubilee-celebrations-1316321.html" target="_blank" rel="noopener">Read about the performance (opens in a new tab)</a></p><dl><dt>Client</dt><dd>Ed Sheeran</dd><dt>Role</dt><dd>Hand-painted artwork</dd><dt>Skills</dt><dd>Precision, symmetry, working across a three-dimensional surface</dd></dl><div class="gal"><img src="images/ed-sheeran-stage.jpg" alt="Ed Sheeran performing in the shoes" loading="lazy"><img src="images/ed-sheeran-palace.jpg" alt="Ed Sheeran performing in front of the palace gates" loading="lazy"><img src="images/ed-sheeran-painting.jpg" alt="Painting the Union Jack at a desk" loading="lazy"></div></div></article>
+<article class="p"><button class="open" type="button" aria-haspopup="dialog"><span class="im"><img src="images/custom-kicks.jpg" alt="Custom Kicks episode thumbnail with portrait Air Force 1s" width="800" height="800" loading="lazy"></span><span class="t">Custom Kicks, E4</span><span class="d">Concept to finished artwork for a YouTube mini-series.</span><span class="g">Television</span></button>
+<div class="more" hidden><h2 class="mt">Custom Kicks, E4</h2><p>I appeared alongside the MattBCustoms team throughout Custom Kicks, an E4 YouTube mini-series about the creative process behind custom footwear. Each episode had a new brief, so I adapted my approach, worked with the team on concept and design, then painted the finished shoes by hand.</p><p><a class="ext" href="https://www.youtube.com/watch?v=PLAIOxCZwho&amp;list=PLSfobYjyRoTDwqsTv5ZBCRwXP6TI_j5u3&amp;index=3" target="_blank" rel="noopener">Watch the series on YouTube (opens in a new tab)</a></p><dl><dt>Client</dt><dd>E4, with the MattBCustoms team</dd><dt>Role</dt><dd>Concept development, design and complete hand-painted artwork</dd><dt>Skills</dt><dd>Portraiture, composition, colour application, collaboration, working to varied briefs</dd></dl><div class="gal"></div></div></article>
+<article class="p"><button class="open" type="button" aria-haspopup="dialog"><span class="im"><img src="images/lightning-portrait.jpg" alt="Blue lightning portrait painted on a white Air Force 1" width="800" height="800" loading="lazy"></span><span class="t">Custom footwear artwork</span><span class="d">Portraits, characters and graphic motifs.</span><span class="g">Illustration</span></button>
+<div class="more" hidden><h2 class="mt">Custom footwear artwork</h2><p>A selection of hand-painted footwear in different illustrative styles. Each design was adapted to the shape, material and panel structure of the shoe.</p><dl><dt>Skills</dt><dd>Illustration, composition, colour application, surface preparation, detailed hand painting</dd></dl><div class="gal"><img src="images/custom-tigers.jpg" alt="Tigers and cherry blossom on Nike Dunks" loading="lazy"><img src="images/custom-astronaut.jpg" alt="White astronaut drawing on black Converse" loading="lazy"><img src="images/custom-spiderman.jpg" alt="Spider-Man mask painted on a white trainer" loading="lazy"><img src="images/custom-lightning.jpg" alt="Blue lightning portrait on an Air Force 1" loading="lazy"></div></div></article>
+<article class="p"><button class="open" type="button" aria-haspopup="dialog"><span class="im"><img src="images/pyrography-butterfly.jpg" alt="Butterfly pyrography on a Timberland boot" width="800" height="800" loading="lazy"></span><span class="t">Live pyrography at Timberland</span><span class="d">Freehand artwork designed and made live for customers.</span><span class="g">Live events</span></button>
+<div class="more" hidden><h2 class="mt">Live pyrography at Timberland</h2><p>I delivered live pyrography at Timberland pop-up events, burning artwork straight onto boots for customers in a retail setting with a short time for each piece.</p><dl><dt>Client</dt><dd>Timberland</dd><dt>Role</dt><dd>Live customisation and customer communication</dd><dt>Skills</dt><dd>Pyrography, careful placement, confident freehand work, accuracy under pressure</dd></dl><div class="gal"><img src="images/pyrography-portrait.jpg" alt="Portrait pyrography on a Timberland boot toe" loading="lazy"><img src="images/pyrography-initials.jpg" alt="Initials burned onto a Timberland boot" loading="lazy"><img src="images/pyrography-outline.jpg" alt="A boot with a freehand pyrography outline in progress" loading="lazy"><img src="images/pyrography-hand.jpg" alt="Pyrography in progress on a Timberland boot in store" loading="lazy"><img src="images/pyrography-boots.jpg" alt="A pair of boots seen from behind on a display stand" loading="lazy"><img src="images/pyrography-desk.jpg" alt="The pyrography pop-up desk in a Timberland store" loading="lazy"></div></div></article>
+<article class="p"><button class="open" type="button" aria-haspopup="dialog"><span class="im"><img src="images/stanley-heart.jpg" alt="Engraved Stanley tumbler with a heart" width="800" height="800" loading="lazy"></span><span class="t">Stanley 1913 x JD Sports</span><span class="d">Live engraving and personalisation using design software.</span><span class="g">Live events</span></button>
+<div class="more" hidden><h2 class="mt">Stanley 1913 x JD Sports</h2><p>I delivered live engraving and product personalisation across several Stanley 1913 x JD Sports pop-ups as part of the MattBCustoms team, using xTool machinery and engraving software in busy customer-facing settings.</p><dl><dt>Role</dt><dd>Live engraving, personalisation and customer interaction</dd><dt>Skills</dt><dd>Engraving software and machinery, attention to detail, adaptability, teamwork</dd></dl><div class="gal"><img src="images/stanley-bow.jpg" alt="Engraved Stanley mug with a bow" loading="lazy"></div></div></article>
+<article class="p"><button class="open" type="button" aria-haspopup="dialog"><span class="im"><img src="images/vinyl-before-after.jpg" alt="The vinyl pattern on a white Jordan 1, in normal light on the left and lit up by a flash on the right" width="800" height="800" loading="lazy"></span><span class="t">Vinyl design and application</span><span class="d">Artwork prepared in cutting software, then applied by hand.</span><span class="g">Production</span></button>
+<div class="more" hidden data-nocover><h2 class="mt">Vinyl design and application</h2><p>I used Cricut machinery and software to make custom graphics for footwear and other products, working with reflective, permanent, removable and heat-transfer vinyl.</p><dl><dt>Role</dt><dd>Artwork preparation, machine setup, cutting, weeding, layering and application</dd><dt>Skills</dt><dd>Material selection, graphic placement, colour layering, quality control</dd></dl><div class="gal"><img src="images/vinyl-before.jpg" alt="White Jordan 1 with a grey vinyl pattern in normal light" loading="lazy"><img src="images/vinyl-reflective.jpg" alt="The same pattern lit up in reflective vinyl" loading="lazy"></div></div></article>
+<article class="p"><button class="open" type="button" aria-haspopup="dialog"><span class="im"><img src="images/england-trainer.jpg" alt="Custom Air Force 1 with a blue swoosh and sketched details" width="800" height="800" loading="lazy"></span><span class="t">England women&#x27;s team trainers</span><span class="d">Sewn for UEFA Women’s Euro 2022.</span><span class="g">Production</span></button>
+<div class="more" hidden><h2 class="mt">England women&#x27;s team trainers</h2><p>I sewed customised trainers for the England women’s team during their UEFA Women’s Euro 2022 campaign. It is one project among the hundreds of customised pairs I sewed at MattBCustoms.</p><dl><dt>Client</dt><dd>England Women’s Team, via MattBCustoms</dd><dt>Role</dt><dd>Sewing and production</dd></dl><div class="gal"><img src="images/england-players.jpg" alt="Players in the finished trainers" loading="lazy"><img src="images/england-player.jpg" alt="A player walking on the pitch in the customised trainers" loading="lazy"><img src="images/sewing-at-machine.jpg" alt="Lola concentrating at an industrial sewing machine" loading="lazy"></div></div></article>
+<article class="p"><button class="open" type="button" aria-haspopup="dialog"><span class="im"><img src="images/draw-portrait.jpg" alt="Pencil portrait with hands over the face" width="800" height="800" loading="lazy"></span><span class="t">Pencil drawings</span><span class="d">Observational and illustrative work.</span><span class="g">Illustration</span></button>
+<div class="more" hidden><h2 class="mt">Pencil drawings</h2><p>Selected observational and illustrative pencil work, showing proportion, shading, composition and attention to detail.</p><div class="gal"><img src="images/draw-skull.jpg" alt="Pencil drawing of a skull" loading="lazy"><img src="images/draw-fashion.jpg" alt="Pencil fashion illustration of a draped figure" loading="lazy"><img src="images/draw-frida.jpg" alt="Pencil portrait of a woman resting her head on her hand" loading="lazy"></div></div></article>
+</div>
+</section>
+<section id="about">
+<h2 class="sec">About</h2>
+<div class="about">
+<img src="images/lola-welcome.jpg" alt="Lola smiling in a cream hoodie in a store" loading="lazy">
+<div>
+<h3>I’m Lola, a designer based in Manchester.</h3>
+<p>I did a BTEC in Graphic Design, then a BSc in Computer Science (First-Class). Since then I’ve worked mostly in hand-painted and customised product, alongside some digital design and content work.</p>
+<p>For the past six years I’ve done commercial work for brands including Adidas, Timberland and E4, turning briefs into finished pieces to a deadline. I’ve worked with clients and small teams throughout, and I’m interested in how people actually use what gets made.</p>
+<p>I’m now looking for a design role on the digital side, where I can combine the practical craft with my technical background. If you think I could be a fit, please get in touch.</p>
+<dl class="skl">
+<dt>Design</dt><dd>UX and UI, user testing, accessibility, typography, colour, composition</dd>
+<dt>Digital</dt><dd>Social content, video editing, Figma, Cricut and engraving software</dd>
+<dt>Craft</dt><dd>Hand painting, pyrography, vinyl cutting, engraving, illustration</dd>
+</dl>
+</div>
+</div>
+</section>
+<section id="contact" class="contact">
+<h2 class="sec">Contact</h2>
+<p class="big"><a href="mailto:lolaisobelchoi@outlook.com">lolaisobelchoi@outlook.com</a></p>
+<p><a href="https://www.linkedin.com/in/lolachoi1/" rel="noopener">LinkedIn</a></p>
+</section>
+</div>
+</main>
+<footer><div class="wrap">Lola Choi, Manchester</div></footer>
+<dialog id="dlg" aria-label="Project details"><div class="dlgin"><button class="x" type="button" id="x">Close</button><div id="dlgbody"></div></div></dialog>
+<script>
+(function(){
+var r=document.documentElement,b=document.getElementById("tg");
+function cur(){return r.getAttribute("data-theme")||(window.matchMedia&&matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")}
+function set(t,save){r.setAttribute("data-theme",t);b.setAttribute("aria-pressed",t==="dark");b.textContent=t==="dark"?"Light":"Dark";if(save){try{localStorage.setItem("lc-theme",t)}catch(e){}}}
+var s=null;try{s=localStorage.getItem("lc-theme")}catch(e){}
+set(s==="dark"||s==="light"?s:cur(),false);
+b.addEventListener("click",function(){set(cur()==="dark"?"light":"dark",true)});
+var d=document.getElementById("dlg"),body=document.getElementById("dlgbody"),last=null;
+document.querySelectorAll(".open").forEach(function(o){o.addEventListener("click",function(){
+var m=o.parentNode.querySelector(".more").cloneNode(true);m.hidden=false;
+if(!m.hasAttribute("data-nocover")){var im=o.querySelector("img").cloneNode(true);m.querySelector(".gal").insertBefore(im,m.querySelector(".gal").firstChild)}
+body.innerHTML="";body.appendChild(m);last=o;
+if(d.showModal){d.showModal();d.scrollTop=0;document.body.classList.add("lock")}})});
+function close(){if(d.open)d.close()}
+document.getElementById("x").addEventListener("click",close);
+d.addEventListener("click",function(e){if(e.target===d)close()});
+d.addEventListener("close",function(){document.body.classList.remove("lock");if(last)last.focus()});
+})();
+</script>
+</body>
+</html>
